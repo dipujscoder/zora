@@ -1,0 +1,32 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+
+
+    @include media-breakpoint-up(lg) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .navbar {
+        .navbar-nav {
+            .nav-link {
+                color: $dark;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
+
+.logo {
+    max-width: 150px;
+}
