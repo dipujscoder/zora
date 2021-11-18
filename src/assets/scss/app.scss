@@ -1,8 +1,10 @@
 @import "variables";
 
-// @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "~bootstrap/scss/bootstrap.scss";
+@import 'layout';
 @import 'navbar';
 @import 'slider';
 @import 'button';
 @import 'banner';
+@import 'auth';
+@import 'contact';

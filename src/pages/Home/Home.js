@@ -26,7 +26,7 @@ const Home = () => {
 
 
     return (
-        <div className="bannar-wrapper">
+        <div className="bannar-wrapper margin-minus">
             <div class="circle" style={{ backgroundColor: bgColor }}></div>
             <div class="content">
                 <div class="textBox">

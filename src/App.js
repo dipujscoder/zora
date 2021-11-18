@@ -1,7 +1,9 @@
-import { BrowserRouter, Routes, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 import Layouts from "./Layouts";
-import Home from './pages/Home/Home'
+import Home from './pages/Home/Home';
+import Login from './pages/Login/Login';
+import ContactUs from './pages/ContactUs/ContactUs'
 
 import './App.css'
 
@@ -10,10 +12,13 @@ function App() {
   return (
     <BrowserRouter>
       <Layouts>
-        <Home />
-        {/* <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes> */}
+        <Switch>
+
+          <Route exact path="/" component={Home} />
+          <Route path="/login" component={Login} />
+          <Route path="/contact-us" component={ContactUs} />
+
+        </Switch>
       </Layouts>
     </BrowserRouter>
   );
