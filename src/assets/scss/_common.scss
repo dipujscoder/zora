@@ -1,0 +1,27 @@
+// Layout 
+.wrapper {
+    .main-content {
+        padding-top: 130px;
+    }
+}
+
+.margin-minus{
+    margin-top: -130px;
+}
+
+.form-control {
+    &.form-control-pill {
+        border-radius: 25px;
+    }
+    
+}
+
+.form-select {
+    &.form-control-pill {
+        border-radius: 25px;
+    }
+}
+
+.border-radius-pill {
+    border-radius: 25px;
+}

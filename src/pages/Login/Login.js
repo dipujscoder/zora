@@ -6,11 +6,14 @@ import { ReactComponent as Bannarsvg } from '../../assets/img/bannarsvg.svg';
 import userIcon from '../../assets/img/user.png';
 import keyIcon from '../../assets/img/key.png'
 
-const onSubmit = () => {
 
-}
 
-const Login = () => {
+const Login = (props) => {
+
+    const onSubmit = () => {
+        props.history.push('/')
+    }
+
     return (
         <div className="container-fluid margin-minus">
             <div className="row justify-content-center">
@@ -38,7 +41,7 @@ const Login = () => {
                             <Input className="form-control-pill border-primary" type="password" id="password" name="password" placeholder="Enter Password" />
                         </div>
 
-                        <Button color="primary" className="btn-block btn-pill" >Log in</Button>
+                        <Button color="primary" className="btn-block btn-pill" onClick={onSubmit}>Log in</Button>
 
 
                         {/* <p className="mt-4">Do not have account? <Link to="/register" >Sign Up</Link></p> */}
